@@ -1,0 +1,65 @@
+[
+  {
+    "name": "ABC Electronics",
+    "address": "123 Main Street, Cityville, State, Zip",
+    "phone": "(123) 456-7890",
+    "website": "http://www.abcelectronics.com",
+    "image": "https://img.logoipsum.com/245.svg",
+    "membership_level": "Gold",
+    "additional_info": "Leading provider of electronic gadgets and accessories."
+  },
+  {
+    "name": "XYZ Fashion",
+    "address": "456 Elm Street, Townville, State, Zip",
+    "phone": "(987) 654-3210",
+    "website": "http://www.xyzfashion.com",
+    "image": "https://img.logoipsum.com/246.svg",
+    "membership_level": "Silver",
+    "additional_info": "Trendy fashion retailer offering clothing and accessories for all ages."
+  },
+  {
+    "name": "Fresh Foods Market",
+    "address": "789 Oak Street, Villagetown, State, Zip",
+    "phone": "(567) 890-1234",
+    "website": "http://www.freshfoodsmarket.com",
+    "image": "https://img.logoipsum.com/226.svg",
+    "membership_level": "Bronze",
+    "additional_info": "Organic grocery store specializing in fresh produce and locally sourced products."
+  },
+  {
+    "name": "Globe Travel Agency",
+    "address": "321 Pine Street, Traveltown, State, Zip",
+    "phone": "(345) 678-9012",
+    "website": "http://www.globetravelagency.com",
+    "image": "https://img.logoipsum.com/247.svg",
+    "membership_level": "Gold",
+    "additional_info": "Full-service travel agency offering personalized vacation planning and booking services."
+  },
+  {
+    "name": "Tech Solutions Inc.",
+    "address": "555 Cedar Street, Techville, State, Zip",
+    "phone": "(234) 567-8901",
+    "website": "http://www.techsolutionsinc.com",
+    "image": "https://img.logoipsum.com/223.svg",
+    "membership_level": "Platinum",
+    "additional_info": "IT consulting firm providing innovative solutions for businesses."
+  },
+  {
+    "name": "Blossom Florist",
+    "address": "777 Maple Street, Flowercity, State, Zip",
+    "phone": "(678) 901-2345",
+    "website": "http://www.blossomflorist.com",
+    "image": "https://img.logoipsum.com/299.svg",
+    "membership_level": "Silver",
+    "additional_info": "Flower shop specializing in custom floral arrangements for all occasions."
+  },
+  {
+    "name": "Sunset Gym & Fitness",
+    "address": "999 Walnut Street, Fitville, State, Zip",
+    "phone": "(901) 234-5678",
+    "website": "http://www.sunsetgf.com",
+    "image": "https://img.logoipsum.com/331.svg",
+    "membership_level": "Bronze",
+    "additional_info": "State-of-the-art fitness center offering a wide range of exercise equipment and classes."
+  }
+]
