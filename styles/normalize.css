@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --primary: #084c61;
+  --danger: #db504a;
+  --warning: #e3b505;
+  --secondary: #4f6d7a;
+  --info: #56a3a6;
+  --font-color: azure;
+  --font-color-dark: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", system-ui;
+  min-width: 400px;
+}
+
+body {
+  min-height: 100vh;
+}
+
+header {
+  background-color: var(--primary);
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  flex-direction: row;
+}
+header img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 20%;
+}
+
+header span {
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--font-color);
+  font-family: "Anton", sans-serif;
+}
+
+#navToggle {
+  background: var(--primary);
+  color: var(--font-color);
+  border: solid 1px var(--font-color);
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+  padding: .5rem;
+  border-radius: 20%;
+
+}
+
+/** Navigation styles */
+
+nav {
+  background-color: #1b1b1b;
+  color: var(--font-color);
+  width: 100%;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+nav li {
+  width: 100%;
+}
+
+nav a {
+  padding: 1rem;
+  display: block;
+  text-decoration: none;
+  color: var(--font-color);
+  text-align: center;
+  transition: all 0.2s ease-in;
+}
+nav a:hover {
+  background-color: var(--secondary);
+}
+
+nav a.active {
+  background-color: var(--info);
+}
+
+/* Main section styles */
+
+main {
+  padding: 0 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+main > h2 {
+  text-align: start;
+  margin: 0.5rem 0;
+  text-decoration-line: underline;
+}
+
+/* Colgrid classes for colums layout 5 cols */
+.grid-5-col {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+}
+.col-grid-1 {
+  grid-column: span 1;
+}
+.col-grid-2 {
+  grid-column: span 2;
+}
+.col-grid-3 {
+  grid-column: span 3;
+}
+.col-grid-4 {
+  grid-column: span 4;
+}
+.col-grid-5 {
+  grid-column: span 5;
+}
+/* Card Classes */
+.card {
+  margin-bottom: 1rem;
+  border: 1px solid black;
+  border-radius: 0.25rem;
+  -webkit-box-shadow: 15px 15px 15px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 15px 15px 15px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: 15px 15px 15px -4px rgba(0, 0, 0, 0.75);
+}
+
+.card h2 {
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--info);
+}
+
+.card .body {
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5rem;
+  overflow: auto;
+}
+.card .text-image {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.text-image img {
+  width: 100%;
+  border-radius: 1rem;
+}
+.text-image p {
+  padding: 1rem;
+  flex: 1;
+}
+
+/* Footer classes */
+
+footer {
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--font-color);
+  background-color: var(--primary);
+}
+footer a {
+  color: var(--warning);
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+#lastModified {
+  color: var(--warning);
+}
+
+/* styles for label certificate */
+
+.filter-buttons{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.filter-buttons button{
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    border: none;
+    background-color: var(--info);
+    color: var(--font-color);
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+.filter-buttons button:hover{
+    background-color: var(--secondary);
+}
+.filter-buttons button.active{
+    background-color: var(--warning);
+    color: var(--font-color-dark);
+}
+.course-label {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    border: solid 1px var(--info);
+    padding: 1rem;
+    border-radius: 0.25rem;
+} 
+.course-label.completed {
+    background-color: var(--info);
+    color: var(--font-color-dark);
+}
+#certificatesLabels {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}

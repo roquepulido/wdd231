@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WDD 231 - WDD 231: Web Frontend Development I - Roque Pulido</title>
+    <meta
+      name="description"
+      content="Web Frontend Development I for WDD 231 at Brigham Young University Idaho, made by Roque Pulido, content includes HTML, CSS, and JavaScript."
+    />
+    <meta
+      name="keywords"
+      content="WDD 231, BYU, Brigham Young University Idaho, Roque Pulido, HTML, CSS, JavaScript"
+    />
+    <meta name="author" content="Roque Pulido" />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/small.css" />
+    <link rel="stylesheet" href="./styles/larger.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+
+    <script src="./scripts/course.js" defer></script>
+    <script src="./scripts/date.js" defer></script>
+    <script src="./scripts/navigation.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <img src="./images/profile-pic.jpg" alt="profile photo" />
+      <span id="nameProfile"></span>
+      <button id="navToggle" aria-label="Toggle Navigation">☰</button>
+    </header>
+    <nav>
+      <ul id="navList">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">Chamber</a></li>
+        <li><a href="#">GitHub Profile</a></li>
+        <li>
+          <a href="https://www.linkedin.com/in/roque-pulido/" target="_blank">
+            LinkedIn
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <h1 class="title col-grid-5" id="titleMain"></h2>
+      <div id="cardsContainer" class="grid-5-col"></div>
+      <div class="grid-5-col">
+        <section class="card col-grid-5">
+        <h2 class="title">Web and Computer Programming Certificate</h2>
+        <div class="body"> 
+          <div class="filter-buttons">
+            <button id="allCoursesFilter">All Courses</button>
+            <button id="wddCoursesFilter">WDD Courses</button>
+            <button id="cseCoursesFilter">CSE Courses</button>
+          </div>
+          <div id="certificatesLabels"></div>
+          <span id="totalCredits"></span>
+        </div>
+      </section>
+      </div>
+      <section>
+        <h2></h2>
+      </section>
+      <section>
+        <h2></h2>
+      </section>
+      <section>
+        <h2></h2>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        &copy;<span id="currentyear"></span> - <span id="nameFooter"></span> -
+        <span id="stateFooter"></span>
+      </p>
+      <p><span id="lastModified"></span></p>
+    </footer>
+  </body>
+</html>
