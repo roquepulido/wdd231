@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce Mérida, Yucatán</title>
+    <meta name="description"
+        content="Chamber of Commerce Merida Yucatan - Connecting businesses and fostering economic growth in the vibrant heart of Mexico.">
+    <meta name="author" content="Roque Alberto Pulido">
+    <meta property="og:title" content="Chamber of Commerce Merida Yucatan">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://roquepulido.github.io/wdd231/chamber/images/hero.jpg">
+    <meta property="og:url" content="https://roquepulido.github.io/wdd231/chamber/index.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./images/favicon/favicon.ico">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/larger.css">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <script src="./scripts/main.js" defer></script>
+    <script src="./scripts/visits.js" defer></script>
+    <script src="./scripts/weather.js" defer></script>
+    <script type="module" src="./scripts/spotlight.js"></script>
+    <script src="./scripts/modal.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-brand">
+
+            <h1>Chamber of Commerce Mérida, Yucatán</h1>
+            <img class="brand-logo" src="./images/logo-cham.png" alt="logo Chamber">
+        </div>
+    </header>
+
+    <button id="menu"></button>
+    <nav class="navigation">
+        <a href="./index.html" title="Home" class="active">Home</a>
+        <a href="./discover.html" title="Discover">Discover</a>
+        <a href="./directory.html" title="Directory">Directory</a>
+        <a href="./join.html" title="Join">Join</a>
+    </nav>
+
+    <main class="container">
+        <section class="hero-container">
+            <picture>
+                <source srcset="./images/hero.jpg" media="(min-width: 1024px)">
+                <source srcset="./images/hero-small.jpg" media="(max-width: 767px)">
+                <img src="./images/hero.jpg" alt="Paseo Montejo, Merida Yucatan">
+            </picture>
+            <a href="./join.html">Join to the chamber</a>
+        </section>
+        <div class="cards">
+
+            <section id="events" class=" card">
+                <h2>Events</h2>
+                <p><b>Business Networking Mixer:</b></p>
+                <p>Join fellow entrepreneurs, business owners, and professionals for an evening of networking and
+                    collaboration. Exchange ideas, build meaningful connections, and explore potential partnerships to
+                    fuel your business growth in the vibrant economic landscape of Merida.</p>
+                <p><b>Economic Outlook Seminar:</b></p>
+                <p>Gain valuable insights into the economic trends and projections shaping the business landscape in
+                    Yucatan. Esteemed economists and industry experts will provide analysis and forecasts, equipping
+                    attendees with essential knowledge to make informed decisions and navigate the evolving marketplace
+                    effectively.</p>
+                <p><b>Entrepreneurship Workshop Series:</b></p>
+                <p>Empower yourself with practical skills and knowledge essential for entrepreneurial success. This
+                    workshop series covers a range of topics including business planning, marketing strategies,
+                    financial management, and innovation. Whether you're launching a startup or scaling your business,
+                    these sessions offer valuable guidance and resources tailored to your needs.</p>
+                <p><b>International Trade Forum:</b></p>
+                <p>Explore opportunities for global expansion and trade partnerships at this forum dedicated to
+                    international commerce. Connect with industry leaders, trade representatives, and government
+                    officials to discuss trade policies, market trends, and investment opportunities. Whether you're
+                    seeking to export your products or expand your supply chain, this event provides a platform to
+                    explore and facilitate international trade connections.</p>
+                <p><b>Tech Innovation Summit:</b></p>
+                <p>Dive into the cutting-edge world of technology and innovation at this summit designed to showcase the
+                    latest trends and advancements. From AI and blockchain to cybersecurity and digital transformation,
+                    discover how technology is revolutionizing industries and driving economic growth in Merida and
+                    beyond. Engage with tech pioneers, participate in interactive sessions, and explore opportunities to
+                    leverage technology for business success.</p>
+            </section>
+            <section class="weather card">
+                <h2>Weather</h2>
+
+                <div id="today-weather"></div>
+
+                <div id="forecast-weather"></div>
+
+
+                <p><b>Page Visits: </b><span id="visits"></span></p>
+            </section>
+        </div>
+        <section id="spotlights">
+            <h2>Member Spotlights</h2>
+            <div id="spotlight-container" class="container-spot">
+                <div class="spotlight">
+                    <h4> Lorem ipsum dolor</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem odio tempore repudiandae quo!
+                        Aliquid,
+                        assumenda a obcaecati sunt aut minus, fugit
+                    </p>
+
+                </div>
+                <div class="spotlight">
+                    <h4> Lorem ipsum dolor</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem odio tempore repudiandae quo!
+                        Aliquid,
+                        assumenda a obcaecati sunt aut minus, fugit
+                    </p>
+
+                </div>
+                <div class="spotlight">
+                    <h4> Lorem ipsum dolor</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem odio tempore repudiandae quo!
+                        Aliquid,
+                        assumenda a obcaecati sunt aut minus, fugit
+                    </p>
+
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="row-footer">
+            <img class="brand-logo" src="./images/logo-cham.png" alt="logo Chamber">
+            <div class="info-footer">
+                <p>
+                    contact: <span> chamber@chabermerida.org</span>
+                </p>
+                <p>
+                    tel:<span>999-234-3423</span>
+                </p>
+                <p>address:35 street, centro, Merida, Yucatan, Mexico</p>
+            </div>
+        </div>
+        <div class="row-footer">
+            <p>&copy;<span id="year"></span></p>
+            <p>
+                &#128125; Roque Alberto Pulido &#128126;
+            </p>
+            <p>Project for WDD 230</p>
+
+            <div class="row-footer">
+                <p id="lastModified"></p>
+            </div>
+        </div>
+    </footer>
+    <div class="overlay" id="overlay"></div>
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="close" id="close">&times;</span>
+            <h2>Join Us for a Chamber of Commerce Meet and Greet!</h2>
+            <p>We invite all visitors and users to attend our Chamber of Commerce Meet and Greet event, happening this
+                <b>Wednesday at 7:00 p.m.</b>
+            </p>
+            <p>Don't miss this opportunity to network, connect with fellow professionals, and explore new business
+                opportunities.</p>
+            <p><b>See you there!</b></p>
+        </div>
+    </div>
+    
+</body>
+
+</html>
