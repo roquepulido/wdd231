@@ -155,6 +155,56 @@ main h1 {
   gap: 1rem;
 }
 
+.container-discover .card figure{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem; 
+}
+.container-discover .card figure img {
+  width: 100%;
+  height: auto;
+  box-shadow: 5px 5px 10px #aaa;
+}
+
+.container-discover .card figure figcaption {
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--font-color-dark);
+  font-weight: 600;
+  padding: 0.5rem;
+  background-color: var(--base-back-ground);
+  border-radius: 0.5rem;
+}
+.container-discover .card .card-info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding: 1rem;
+  background-color: #56a3a644;
+  border-radius: 0.5rem;
+}
+.container-discover .card .label {
+  font-weight: 600;
+  color: var(--primary);
+  margin-right: 1rem;
+  text-transform: uppercase;
+}
+.container-discover .card button{
+  padding: 0.5rem 1rem;
+  background-color: var(--primary);
+  color: var(--font-color);
+  text-transform: capitalize;
+  box-shadow: 1px 1px 4px #999;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
 footer {
   padding: 1rem 0;
   display: flex;
@@ -314,7 +364,44 @@ section p {
   padding: 1rem;
   text-shadow: 2px 6px 8px rgba(255, 255, 255);
 }
-
+.container-discover {
+  display: grid;
+  gap: 1.5rem;
+  padding: 1rem;
+  grid-template-areas:
+    "card1"
+    "card2"
+    "card3"
+    "card4"
+    "card5"
+    "card6"
+    "card7"
+    "card8";
+}
+.container-discover .card:nth-child(1) {
+  grid-area: card1;
+}
+.container-discover .card:nth-child(2) {
+  grid-area: card2;
+}
+.container-discover .card:nth-child(3) {
+  grid-area: card3;
+}
+.container-discover .card:nth-child(4) {
+  grid-area: card4;
+}
+.container-discover .card:nth-child(5) {
+  grid-area: card5;
+}
+.container-discover .card:nth-child(6) {
+  grid-area: card6;
+}
+.container-discover .card:nth-child(7) {
+  grid-area: card7;
+}
+.container-discover .card:nth-child(8) {
+  grid-area: card8;
+}
 
 /*----------- FORM STYLE --------------*/
 .form-class fieldset {

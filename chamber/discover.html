@@ -19,8 +19,11 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./styles/base.css">
     <link rel="stylesheet" href="./styles/larger.css">
+    <link rel="stylesheet" href="./styles/medium.css">
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/calendar.css">
+    <script src="./scripts/discover.js" defer></script>
+    <script src="./scripts/visits.js"></script>
 </head>
 
 <body>
@@ -39,56 +42,9 @@
         <a href="./join.html" title="Join">Join</a>
     </nav>
 
+    <h1 id="visits"></h1>
     <main class="container-discover">
-        <aside class="aside-bar">
-            <div class="heading">
-                <h3>Unlocking Opportunities</h3>
-                <p>Join the Vibrant Chamber of Commerce in Merida, Yucatan! Connect with like-minded entrepreneurs,
-                    access valuable resources, and participate in events tailored to accelerate your business growth in
-                    one of Mexico's most dynamic economic hubs.</p>
-            </div>
-            <div class="heading">
-                <h3>Elevate Your Business</h3>
-                <p>Explore the Gateway to Success with Merida's Dynamic Chamber of Commerce! Gain a competitive edge
-                    through networking, advocacy, and strategic partnerships, while tapping into a supportive community
-                    dedicated to fostering innovation and prosperity in the heart of the Yucatan Peninsula.</p>
-            </div>
-            <div class="calendar-container">
-                <div id="calendar">
-                </div>
-
-            </div>
-            <div class="heading">
-                <h3>Aditional Info</h3>
-                <p id="visits"></p>
-            </div>
-        </aside>
-        <section class="pics">
-            <figure class="img-container">
-                <img src="./images/discover/merida-first.webp" alt="Mérida" loading="lazy">
-                <figcaption>Mérida Downtown Landmark</figcaption>
-            </figure>
-            <figure class="img-container">
-                <img src="./images/discover/merida-comida.jpg" alt="Mérida food" loading="lazy">
-                <figcaption>Popular Mérida's Food</figcaption>
-            </figure>
-            <figure class="img-container">
-                <img src="./images/discover/catedral.jpg" alt="Mérida church" loading="lazy">
-                <figcaption>Mérida's Cathedral</figcaption>
-            </figure>
-            <figure class="img-container">
-                <img src="./images/discover/calandria.webp" alt="Mérida calandria" loading="lazy">
-                <figcaption>Mérida's Horse Ride</figcaption>
-            </figure>
-            <figure class="img-container">
-                <img src="./images/discover/chichen.jpg" alt="Chichén Itzá" loading="lazy">
-                <figcaption>Chichén Itzá, Yucatán</figcaption>
-            </figure>
-            <figure class="img-container">
-                <img src="./images/discover/merida-mercado.webp" alt="Flea market" loading="lazy">
-                <figcaption>Mérida's Flea Market</figcaption>
-            </figure>
-        </section>
+        
     </main>
 
     <footer>
@@ -116,21 +72,6 @@
             </div>
         </div>
     </footer>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/moment.min.js"></script>
-    <script src="./scripts/discover.js"></script>
-    <script src="./scripts/visits.js"></script>
-    <script src="./scripts/calendar.js"></script>
-    <script>
-        !(function () {
-            let data = [
-                { eventName: "Meeting", calendar: "Meet", color: "blue" },
-            ];
-
-            function addDate(ev) { }
-
-            let calendar = new Calendar("#calendar", data);
-        })();
-    </script>
 </body>
 
 </html>

@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "name": "Celestun",
+    "description": "Famous for its flamingos and beautiful beaches.",
+    "address": "Celestun, Yucatan",
+    "image": "images/discover/celestun.webp"
+  },
+  {
+    "id": 2,
+    "name": "Cenote Ik Kil",
+    "description": "A popular cenote known for its stunning beauty.",
+    "address": "Cenote Ik Kil, Yucatan",
+    "image": "images/discover/cenote.webp"
+  },
+  {
+    "id": 3,
+    "name": "Chichén Itzá",
+    "description": "A world-famous archaeological site and UNESCO World Heritage Site.",
+    "address": "Chichén Itzá, Yucatan",
+    "image": "images/discover/chichen.webp"
+  },
+  {
+    "id": 4,
+    "name": "Popular Mérida's Food",
+    "description": "Explore the rich culinary traditions of Mérida.",
+    "address": "Mérida, Yucatan",
+    "image": "images/discover/food.webp"
+  },
+  {
+    "id": 5,
+    "name": "Izamal",
+    "description": "Known as the Yellow City, famous for its colonial architecture.",
+    "address": "Izamal, Yucatan",
+    "image": "images/discover/izamal.webp"
+  },
+  {
+    "id": 6,
+    "name": "Paseo de Montejo",
+    "description": "A beautiful avenue lined with historic mansions.",
+    "address": "Mérida, Yucatan",
+    "image": "images/discover/paseo_montejo.webp"
+  },
+  {
+    "id": 7,
+    "name": "Plancha park",
+    "description": "A popular park in the heart of Mérida.",
+    "address": "Mérida, Yucatan",
+    "image": "images/discover/plancha.webp"
+  },
+  {
+    "id": 8,
+    "name": "Progreso Beach",
+    "description": "A popular beach destination near Mérida.",
+    "address": "Progreso, Yucatan",
+    "image": "images/discover/progreso.webp"
+  }
+]
