@@ -730,3 +730,6 @@ dialog::backdrop {
 .shine-animation {
   animation: shine 2s infinite;
 }
+#visits{
+  text-align: center;
+}
