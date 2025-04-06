@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project - Site Plan</title>
+
+    <meta name="description"
+        content="Dynamic Web Fundamentals for WDD 131 at Brigham Young University Idaho, made by Roque Pulido, content includes HTML, CSS, and JavaScript." />
+    <meta name="keywords" content="WDD 131, BYU, Brigham Young University Idaho, Roque Pulido, HTML, CSS, JavaScript" />
+    <meta name="author" content="Roque Pulido" />
+
+    <link rel="stylesheet" href="./styles/siteplan.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Limelight&display=swap"
+        rel="stylesheet">
+    <script src="./scripts/siteplan.js" defer></script>
+
+</head>
+
+<body>
+    <section>
+        <h1>Site Name</h1>
+        <h1>Gotta Analyze 'Em All!</h1>
+        <h3>Explore Pokémon Stats & TCG Data</h3>
+    </section>
+    <section>
+        <h1>Site Purpose</h1>
+        <h3>Your Ultimate Pokémon Hub</h3>
+        <p>Dive into the world of Pokémon like never before! This site combines game stats from the PokeAPI and trading
+            card data
+            from the Pokémon TCG API to give trainers like you a complete resource. Whether you're battling in-game or
+            collecting
+            cards, here's what you'll find:</p>
+            <ul>
+                <li>Pokédex Stats: Detailed info on your favorite Pokémon—abilities, types, and battle stats.</li>
+                <li>TCG Collector's Corner: Explore card artwork, rarities, and market trends.</li>
+                <li>All in One Place: No more jumping between sites!</li>
+                <li>Made for fans, by fans. Gotta analyze 'em all!</li>
+            </ul>
+        </p>
+    </section>
+    <section>
+        <h1>Scenarios</h1>
+        <h2>Scenario 1</h2>
+        <p>What are the best stats and moves for my Charizard in competitive battles?</p>
+        <ol>
+            <li>The Pokémon stats page should display:
+                <ul>
+                    <li>Base stats (HP, Attack, Defense, etc.) with comparisons to similar Pokémon.</li>
+                    <li>Recommended movesets (e.g., Fire Blast + Solar Beam for coverage).</li>
+                    <li>Weaknesses/strengths (e.g., "Weak to Rock/Water, resists Grass"). </li>
+                </ul>
+            </li>
+            <li>
+                Could link to a "Battle Tips" section or popular competitive builds.
+            </li>
+        </ol>
+        <h2>Scenario 2</h2>
+        <p>Where can I find the market value and rarity of the 1st edition Charizard holographic card?</p>
+        <p>The TCG page should include:</p>
+        <ul>
+            <li>Card details (set, rarity, release year).</li>
+            <li>Price trends (if API supports it) or links to marketplaces like TCGPlayer.</li>
+            <li>High-quality card images (front/back).</li>
+        </ul>
+
+    </section>
+    <section>
+        <h1>Color Schema</h1>
+        <div class="color-schema-container">
+            <div class="bg-primary">
+                <p>Primary</p>
+                <p>#ff0000</p>
+            </div>
+            <div class="bg-secondary">
+                <p>Secondary</p>
+                <p>#3b4cca</p>
+            </div>
+            <div class="bg-info">
+                <p>Info</p>
+                <p>#0075be</p>
+            </div>
+            <div class="bg-warning">
+                <p>Warning</p>
+                <p>#ffde00</p>
+            </div>
+            <div class="bg-danger">
+                <p>Danger</p>
+                <p>#cc0000</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h1>Typography</h1>
+        <div class="typography-info">
+            <p>This design system uses the following font pairing:</p>
+
+            <div class="font-sample">
+                <div class="name">Headings:</div>
+                <div class="limelight">Limelight</div>
+            </div>
+            <div class="font-sample">
+                <div class="name">Body Text:</div>
+                <div class="noto-serif">Noto Serif</div>
+            </div>
+        </div>
+
+        <h1>Main Page Heading (h1)</h1>
+
+
+        <h2>Section Heading (h2)</h2>
+
+        <h3>Subsection Heading (h3)</h3>
+
+        <h4>Smaller Heading (h4)</h4>
+
+        <h5>Minor Heading (h5)</h5>
+
+        <h6>Smallest Heading (h6)</h6>
+
+        <div class="container">
+            <h2>Content Block Example</h2>
+            <p>This is a styled container showing how the typography works in different contexts.
+            <p>This combination works well for sites that want to balance professionalism with a touch of playfulness.
+            </p>
+        </div>
+    </section>
+    <section>
+        <h1>Wireframes</h1>
+
+        <h2>Mobile view</h2>
+        <img src="./images/mobile.png" alt="Mobile Wireframe" class="wireframe">
+        <h2>Desktop view</h2>
+        <img src="./images/desktop.png" alt="Desktop Wireframe" class="wireframe">
+    </section>
+    <footer>
+        <p>
+            <span id="currentyear"></span>
+            <span>-</span>
+            <span> <a href="https://github.com/roquepulido" target="_blank">Roque A. Pulido</a> </span>
+            <span>-</span>
+            <span>Mérida, Yucatán</span>
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
