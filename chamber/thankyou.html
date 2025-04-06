@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submission Confirmation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Information Saved</h1>
+        <p>Your personal information has been successfully saved.</p>
+        <!-- Placeholder for dynamic content -->
+        <div id="form-data"></div>
+    </div>
+    <script>
+        // Extract query parameters from the URL
+        const params = new URLSearchParams(window.location.search);
+        const formData = {
+            fname: params.get('fname'),
+            lname: params.get('lname'),
+            title: params.get('title'),
+            email: params.get('email'),
+            phone: params.get('phone'),
+            organization: params.get('organization'),
+            membership: params.get('membership'),
+            description: params.get('description'),
+            timestamp: params.get('timestamp')
+        };
+
+        // Convert timestamp to a readable date
+        if (formData.timestamp) {
+            const date = new Date(Number(formData.timestamp));
+            formData.timestamp = date.toLocaleString();
+        }
+
+        // Generate HTML for each field
+        const formDataContainer = document.getElementById('form-data');
+        for (const [key, value] of Object.entries(formData)) {
+            const fieldElement = document.createElement('p');
+            fieldElement.textContent = `${key}: ${value}`;
+            formDataContainer.appendChild(fieldElement);
+        }
+    </script>
+</body>
+
+</html>

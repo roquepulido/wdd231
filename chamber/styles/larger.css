@@ -55,14 +55,6 @@
         grid-row-gap: 0px;
     }
 
-    .container.form {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        grid-template-rows: 1fr;
-        grid-column-gap: 1rem;
-        grid-row-gap: 0px;
-    }
-
     .aside-bar,
     .info-membership {
         grid-area: 1 / 1 / 2 / 2;

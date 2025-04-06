@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Plan Merida, Join Yucatan Chamber of Commerce</title>
+    <meta name="description" content="Chamber of Commerce Merida Yucatan. Join form">
+    <meta name="author" content="Roque Pulido">
+    <meta property="og:title" content="Chamber of Commerce Merida Yucatan">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://roquepulido.github.io/wdd231/chamber/images/hero.jpg">
+    <meta property="og:url" content="https://roquepulido.github.io/wdd231/chamber/index.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./images/favicon/favicon.ico">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/larger.css">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-brand">
+            <img class="brand-logo" src="./images/logo-cham.png" alt="logo Chamber">
+            <h1>Chamber of Commerce Mérida, Yucatán</h1>
+        </div>
+    </header>
+
+    <button id="menu"></button>
+    <nav class="navigation">
+        <a href="./index.html" title="Home">Home</a>
+        <a href="./discover.html" title="Discover">Discover</a>
+        <a href="./directory.html" title="Directory">Directory</a>
+        <a href="./join.html" title="Join" class="active">Join</a>
+    </nav>
+
+    <main class="container form">
+        <div class="info-membership">
+            <div class="membership">
+                <img src="./images/form/np-medal.svg" alt="np-medal">
+                <h4>Non-Profit Membership</h4>
+                <button class="modal-trigger" data-modal="np-modal">View Details</button>
+            </div>
+            <div class="membership">
+                <img src="./images/form/bronze-medal.svg" alt="bronze-medal">
+                <h4>Bronze Membership</h4>
+                <button class="modal-trigger" data-modal="bronze-modal">View Details</button>
+            </div>
+            <div class="membership">
+                <img src="./images/form/silver-medal.svg" alt="silver-medal">
+                <h4>Silver</h4>
+                <button class="modal-trigger" data-modal="silver-modal">View Details</button>
+            </div>
+            <div class="membership">
+                <img src="./images/form/gold-medal.svg" alt="gold-medal">
+                <h4>Gold Membership</h4>
+                <button class="modal-trigger" data-modal="gold-modal">View Details</button>
+            </div>
+        </div>
+        <div class="form-class">
+            <form method="get" action="thankyou.html">
+                <fieldset>
+                    <legend>Applicant Information</legend>
+                    <label>First Name*<input type="text" name="fname" id="fname" autocomplete="given-name" required></label>
+                    <label>Last Name*<input type="text" name="lname" id="lname" autocomplete="family-name" required></label>
+                    <label> Title or Position <input type="text" name="title" id="title" autocomplete="organization-title"
+                            pattern="[a-zA-Z\s-]{7,}"></label>
+                    <label>Email*<input type="email" name="email" id="email" placeholder="email@email.com" autocomplete="email"
+                            required></label>
+                    <label>Mobile Phone Number*<input type="tel" name="phone" id="phone" required></label>
+                    <label>Business/Organization's Name*<input type="text" name="organization" id="organization" autocomplete="organization"
+                            required></label>
+                    <label>
+                        Membership Level
+                        <select name="membership" id="membership">
+                            <option value="np">Non-Profit Membership</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="Silver">Silver Membership</option>
+                            <option value="Gold">Gold Membership</option>
+                        </select>
+                    </label>
+                    <label>Business/Organization's Description
+                        <textarea name="description" id="description" cols="30" rows="5"></textarea>
+                    </label>
+                    <input type="hidden" name="timestamp" id="timestamp">
+                    <input type="submit" value="Send My Information">
+                </fieldset>
+            </form>
+        </div>
+
+        <!-- Modals -->
+        <dialog id="np-modal" class="modal">
+            <h2>Non-Profit Membership</h2>
+            <ul>
+                <li>Access to Chamber events and networking opportunities.</li>
+                <li>Listing in the Chamber's online directory with basic contact information.</li>
+                <li>Participation in Chamber committees focused on community service and outreach.</li>
+                <li>Subscription to Chamber newsletters and updates.</li>
+            </ul>
+            <button class="modal-close">Close</button>
+        </dialog>
+        <dialog id="bronze-modal" class="modal">
+            <h2>Bronze Membership</h2>
+            <ul>
+                <li>All benefits of Non-Profit Membership.</li>
+                <li>Enhanced listing in the Chamber's online directory with a brief description and logo.</li>
+                <li>Opportunity to host or sponsor Chamber events.</li>
+                <li>Access to member-exclusive workshops and seminars.</li>
+                <li>Discounted rates for advertising in Chamber publications.</li>
+            </ul>
+            <button class="modal-close">Close</button>
+        </dialog>
+        <dialog id="silver-modal" class="modal">
+            <h2>Silver Membership</h2>
+            <ul>
+                <li>All benefits of Bronze Membership.</li>
+                <li>Priority placement in the Chamber's online directory with a detailed profile and links to social media.</li>
+                <li>Recognition as a Silver-level member in Chamber communications and events.</li>
+                <li>Invitations to VIP receptions and special networking events.</li>
+                <li>Access to Chamber resources such as market research reports and business development tools.</li>
+            </ul>
+            <button class="modal-close">Close</button>
+        </dialog>
+        <dialog id="gold-modal" class="modal">
+            <h2>Gold Membership</h2>
+            <ul>
+                <li>All benefits of Silver Membership.</li>
+                <li>Premier placement in the Chamber's online directory with prominent branding and multimedia content.</li>
+                <li>Exclusive sponsorship opportunities for flagship Chamber events.</li>
+                <li>Featured spotlights in Chamber newsletters and press releases.</li>
+                <li>Personalized support from Chamber staff for business advocacy and lobbying efforts.</li>
+                <li>Invitation to join the Chamber's advisory board or executive council.</li>
+            </ul>
+            <button class="modal-close">Close</button>
+        </dialog>
+    </main>
+
+    <footer>
+        <div class="row-footer">
+            <img class="brand-logo" src="./images/logo-cham.png" alt="logo Chamber">
+            <div class="info-footer">
+                <p>
+                    contact: <span> chamber@chabermerida.org</span>
+                </p>
+                <p>
+                    tel:<span>999-234-3423</span>
+                </p>
+                <p>address:35 street, centro, Merida, Yuctan, Mexico</p>
+            </div>
+        </div>
+        <div class="row-footer">
+            <p>&copy;<span id="year"></span></p>
+            <p>
+                &#128125; Roque Alberto Pulido &#128126;
+            </p>
+            <p>Project for WDD 230</p>
+
+            <div class="row-footer">
+                <p id="lastModified"></p>
+            </div>
+        </div>
+    </footer>
+    
+ 
+
+</body>
+
+</html>
