@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Plan Merida, Yucatan Chamber of Commerce and Discover</title>
+    <meta name="description" content="Chamber of Commerce Merida Yucatan. Information about activities and visit info.">
+    <meta name="author" content="Roque Pulido">
+    <link rel="icon" href="./images/favicon/favicon.ico">
+    <meta property="og:title" content="Chamber of Commerce Merida Yucatan">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://roquepulido.github.io/wdd230/chamber/images/hero.jpg">
+    <meta property="og:url" content="https://roquepulido.github.io/wdd230/chamber/index.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/larger.css">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/calendar.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-brand">
+            <img class="brand-logo" src="./images/logo-cham.png" alt="logo Chamber">
+            <h1>Chamber of Commerce Mérida, Yucatán</h1>
+        </div>
+    </header>
+
+    <button id="menu"></button>
+    <nav class="navigation">
+        <a href="./index.html" title="Home">Home</a>
+        <a href="./discover.html" title="Discover" class="active">Discover</a>
+        <a href="./directory.html" title="Directory">Directory</a>
+        <a href="./join.html" title="Join">Join</a>
+    </nav>
+
+    <main class="container-discover">
+        <aside class="aside-bar">
+            <div class="heading">
+                <h3>Unlocking Opportunities</h3>
+                <p>Join the Vibrant Chamber of Commerce in Merida, Yucatan! Connect with like-minded entrepreneurs,
+                    access valuable resources, and participate in events tailored to accelerate your business growth in
+                    one of Mexico's most dynamic economic hubs.</p>
+            </div>
+            <div class="heading">
+                <h3>Elevate Your Business</h3>
+                <p>Explore the Gateway to Success with Merida's Dynamic Chamber of Commerce! Gain a competitive edge
+                    through networking, advocacy, and strategic partnerships, while tapping into a supportive community
+                    dedicated to fostering innovation and prosperity in the heart of the Yucatan Peninsula.</p>
+            </div>
+            <div class="calendar-container">
+                <div id="calendar">
+                </div>
+
+            </div>
+            <div class="heading">
+                <h3>Aditional Info</h3>
+                <p id="visits"></p>
+            </div>
+        </aside>
+        <section class="pics">
+            <figure class="img-container">
+                <img src="./images/discover/merida-first.webp" alt="Mérida" loading="lazy">
+                <figcaption>Mérida Downtown Landmark</figcaption>
+            </figure>
+            <figure class="img-container">
+                <img src="./images/discover/merida-comida.jpg" alt="Mérida food" loading="lazy">
+                <figcaption>Popular Mérida's Food</figcaption>
+            </figure>
+            <figure class="img-container">
+                <img src="./images/discover/catedral.jpg" alt="Mérida church" loading="lazy">
+                <figcaption>Mérida's Cathedral</figcaption>
+            </figure>
+            <figure class="img-container">
+                <img src="./images/discover/calandria.webp" alt="Mérida calandria" loading="lazy">
+                <figcaption>Mérida's Horse Ride</figcaption>
+            </figure>
+            <figure class="img-container">
+                <img src="./images/discover/chichen.jpg" alt="Chichén Itzá" loading="lazy">
+                <figcaption>Chichén Itzá, Yucatán</figcaption>
+            </figure>
+            <figure class="img-container">
+                <img src="./images/discover/merida-mercado.webp" alt="Flea market" loading="lazy">
+                <figcaption>Mérida's Flea Market</figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <footer>
+        <div class="row-footer">
+            <img class="brand-logo" src="./images/logo-cham.png" alt="logo Chamber">
+            <div class="info-footer">
+                <p>
+                    contact: <span> chamber@chabermerida.org</span>
+                </p>
+                <p>
+                    tel:<span>999-234-3423</span>
+                </p>
+                <p>address:35 street, centro, Merida, Yucatan, Mexico</p>
+            </div>
+        </div>
+        <div class="row-footer">
+            <p>&copy;<span id="year"></span></p>
+            <p>
+                &#128125; Roque Alberto Pulido &#128126;
+            </p>
+            <p>Project for WDD 230</p>
+
+            <div class="row-footer">
+                <p id="lastModified"></p>
+            </div>
+        </div>
+    </footer>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/moment.min.js"></script>
+    <script src="./scripts/discover.js"></script>
+    <script src="./scripts/visits.js"></script>
+    <script src="./scripts/calendar.js"></script>
+    <script>
+        !(function () {
+            let data = [
+                { eventName: "Meeting", calendar: "Meet", color: "blue" },
+            ];
+
+            function addDate(ev) { }
+
+            let calendar = new Calendar("#calendar", data);
+        })();
+    </script>
+</body>
+
+</html>
