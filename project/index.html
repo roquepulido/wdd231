@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gotta Analyze 'Em All!</title>
+
+    <meta name="description"
+        content="Dynamic Web Fundamentals for WDD 231 at Brigham Young University Idaho, made by Roque Pulido, content includes HTML, CSS, and JavaScript." />
+    <meta name="keywords" content="WDD 231, BYU, Brigham Young University Idaho, Roque Pulido, HTML, CSS, JavaScript" />
+    <meta name="author" content="Roque Pulido" />
+
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Limelight&display=swap"
+        rel="stylesheet">
+    <script src="./scripts/main.js" type="module"></script>
+
+</head>
+
+<body>
+    <header id="headerContent">
+        <h1 class="font-pokemon">Gotta Analyze 'Em All!</h1>
+        <h3>Explore Pokémon Stats & TCG Data</h3>
+    </header>
+
+    <body>
+        <section class="hero">
+            <figure>
+                <picture>
+                    <source srcset="./images/hero-large.webp" media="(min-width: 768px)">
+                    <img src="./images/hero.webp" alt="Pokeball" class="pokeball">
+                </picture>
+            </figure>
+            <h4>Welcome to the ultimate Pokémon analyst's toolkit!</h3>
+                <p> Whether you're optimizing battle teams or tracking
+                    card
+                    values, we
+                    bring together real-time Pokémon stats and TCG market insights in one place. No more switching
+                    between
+                    apps—get the data
+                    you need to become a smarter trainer and collector!</p>
+        </section>
+
+
+        <div class="card-container">
+            <div class="card">
+                <h2>Pokémon Stats</h2>
+                <h4> Master the Numbers, Dominate Battles </h4>
+                <img src="./images/pokedex.webp" alt="pokedex">
+                <div class="red-box">
+                    <h5>Dive deep into the stats that matter:</h5>
+                    <ul>
+                        <li>Base stats (HP, Attack, Speed) for all 1,000+ Pokémon</li>
+                        <li>Evolution chains and level-up moves</li>
+                        <li>Type matchups with interactive effectiveness charts</li>
+                        <li>Competitive rankings for VGC and online battles
+                        </li>
+                    </ul>
+                    <a href="./pokedex.html">Explore Now</a>
+                </div>
+            </div>
+            <div class="card">
+                <h2>TCG Gallery</h2>
+                <h3>Collect Smarter, Not Harder</h3>
+                <img src="./images/tgc.webp" alt="tgc">
+                <div class="blue-box">
+                    Track the trading card market like a pro:
+                    <ul>
+                        <li>Card prices and rarity trends across sets </li>
+                        <li>Holographic/1st edition identifiers</li>
+                        <li>Deck-building tools with energy cost analysis</li>
+                        <li>Artwork gallery for iconic cards</li>
+                    </ul>
+                    <a href="./tcg-gallery.html">Explore Now</a>
+                </div>
+            </div>
+
+        </div>
+
+
+        </div>
+    </body>
+    <footer id="footerContent">
+        <p>
+            <span id="currentyear"></span>
+            <span>-</span>
+            <span> <a href="https://github.com/roquepulido" target="_blank">Roque A. Pulido</a> </span>
+            <span>-</span>
+            <span>Mérida, Yucatán</span>
+        </p>
+        <p><span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>

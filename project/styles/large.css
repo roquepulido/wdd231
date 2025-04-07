@@ -1,0 +1,53 @@
+@media screen and (min-width: 1200px) {
+  header {
+    grid-area: header;
+    border-radius: 1rem;
+  }
+  section.hero {
+    grid-area: hero;
+    border-radius: 1rem;
+    margin-top: 1rem;
+  }
+    section.hero img {
+        max-width: 70%;
+        height: auto;
+    }
+
+  footer {
+    grid-area: footer;
+    border-radius: 1rem;
+  }
+
+  .card-container .card:nth-child(1) {
+    grid-area: content;
+  }
+  .card-container .card:nth-child(2) {
+    grid-area: content2;
+  }
+  .card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .card {
+    justify-content: flex-start;
+    border: solid 2px var(--font-color);
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+  .card img {
+    margin: auto;
+    width: 300px; /* Set a fixed width */
+    height: auto; /* Maintain aspect ratio */
+  }
+  .card a:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+    background-color: var(--water-type);
+    color: var(--pokeball-accent);
+  }
+  .red-box,
+  .blue-box {
+    border-radius: 1rem;
+  }
+}
