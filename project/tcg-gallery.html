@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gotta Analyze 'Em All! - POKEDEX</title>
+    <title>Gotta Analyze 'Em All! - TCG</title>
 
     <meta name="description"
         content="Dynamic Web Fundamentals for WDD 231 at Brigham Young University Idaho, made by Roque Pulido, content includes HTML, CSS, and JavaScript." />
@@ -18,7 +18,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Limelight&display=swap"
         rel="stylesheet">
-    <script src="./scripts/pokedex.js" type="module"></script>
+    <script src="./scripts/tgc.js" type="module"></script>
 
 </head>
 
@@ -30,35 +30,33 @@
     <nav>
         <ul class="nav-list">
             <li><a href="./index.html">Home</a></li>
-            <li><a class="active" href="./pokedex.html">Pokédex</a></li>
-            <li><a href="./tcg-gallery.html">TCG Gallery</a></li>
+            <li><a href="./pokedex.html">Pokédex</a></li>
+            <li><a class="active" href="./tcg-gallery.html">TCG Gallery</a></li>
         </ul>
     </nav>
 
     <body>
         <section id="searchSection">
-            <h2>Find a Pokémon Info Stats</h2>
+            <h2>Find a Pokémon TCG</h2>
             <div class="input-container">
-                <label for="pokemonName">Enter Pokémon Name:</label>
+                <label for="pokemonName">Enter Pokémon Name or card name:</label>
                 <div class="input-suggestions">
                     <input type="text" id="pokemonName" name="pokemonName" required placeholder="e.g., Pikachu"
                         autocomplete="off">
-                    <div id="suggestions" class="suggestions"></div> <!-- Contenedor para sugerencias -->
                 </div>
             </div>
             <button id="searchButton">Search</button>
         </section>
-        <section id="pokemonSection">
-            <h2>Pokémon Details</h2>
-            <div id="pokemonDetails">
-            </div>
-            <div class="chart-container">
-                <canvas id="myChart" style="display: none;"></canvas>
-                <h4 id="comparationTitle">Comparative chart</h4>
-                <div id="comparisonList"></div>
-                <canvas id="comparateChart" style="display: none;"></canvas>
+        <section id="cardsSection">
+            <div class="title-card">
+                <h2>Pokémon TCG Cards</h2>
+                <div>
+                    <button id="sortButton" data-order="asc">Sort by Price</button>
+                </div>
             </div>
 
+            <div id="cardsContainer">
+            </div>
         </section>
         <div>
         </div>

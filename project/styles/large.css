@@ -8,10 +8,10 @@
     border-radius: 1rem;
     margin-top: 1rem;
   }
-    section.hero img {
-        max-width: 70%;
-        height: auto;
-    }
+  section.hero img {
+    max-width: 70%;
+    height: auto;
+  }
 
   footer {
     grid-area: footer;
@@ -49,5 +49,55 @@
   .red-box,
   .blue-box {
     border-radius: 1rem;
+  }
+  #pokemonSection {
+    grid-template-areas:
+      "title chart"
+      "stats chart";
+  }
+  #searchSection {
+    margin: 3rem auto;
+    border-radius: 8px;
+  }
+  #pokemonSection {
+    margin-top: 2rem;
+    border-radius: 8px;
+  }
+  footer {
+    margin-top: 2rem;
+  }
+  .price-ribbon {
+    position: absolute;
+    right: 50px;
+    bottom: 20px;
+    background-color: var(--gold);
+    color: var(--font-color-dark);
+    padding: 0.5rem;
+    font-weight: bold;
+    border-radius: 8px;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+  }
+  .nav-list {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    list-style: none;
+  }
+  .nav-list a {
+    text-decoration: none;
+    color: var(--font-color-dark);
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+  .nav-list a:hover {
+    background-color: var(--secondary);
+    color: var(--pokeball-accent);
   }
 }
